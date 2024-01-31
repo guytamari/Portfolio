@@ -1,0 +1,80 @@
+body {
+    background-color: #000;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    /* padding: 20px; */
+}
+
+/* #hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.terminal-text {
+    overflow: hidden;
+    white-space: nowrap;
+    /* border-right: 2px solid #00ff00; */
+    padding-right: 5px;
+    display: inline-block;
+}
+
+#cursor {
+    animation: blink 1s infinite;
+ 
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.project-sec-heading{
+    color:#ff1010 !important ;
+
+}
+.resume{
+    width: 80%; /* Set the width of the div */
+    margin-left: auto; /* Center the div horizontally */
+    margin-right: auto; /* Center the div horizontally */
+    padding-left: 20px; /* Apply padding on the left side */
+    padding-right: 20px; /* Apply padding on the right side */
+}
+.projects{
+    width: 80%; /* Set the width of the div */
+    margin-left: auto; /* Center the div horizontally */
+    margin-right: auto; /* Center the div horizontally */
+    padding-left: 20px; /* Apply padding on the left side */
+    padding-right: 20px; /* Apply padding on the right side */
+}
+
+.terminal::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.line-break:after {
+    content: "";
+    display: block;
+    background-color: #31cf98;
+    height: 3.5px; /* Adjust height as needed */
+    width: 100%; /* To cover the entire width of the container */
+    margin: 40px 0; /* Adjust margin as needed */
+}
+
+/* .skills{
+    padding-left: 20%;
+} */
+.skills-title{
+    color:#ff1010 !important ;
+}
